@@ -1,0 +1,50 @@
+Maher@DESKTOP-N09PJ70 MINGW64 ~/Desktop/learn-git-again (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/Maher/Desktop/learn-git-again/
+.git/
+
+Maher@DESKTOP-N09PJ70 MINGW64 ~/Desktop/learn-git-again (master)
+$ git add third.txt
+fatal: pathspec 'third.txt' did not match any files
+
+Maher@DESKTOP-N09PJ70 MINGW64 ~/Desktop/learn-git-again (master)
+$ git config --global user.name="Mouti3cha3beni"
+error: invalid key: user.name=Mouti3cha3beni
+
+Maher@DESKTOP-N09PJ70 MINGW64 ~/Desktop/learn-git-again (master)
+$ git config --global user.name "Mouti3cha3beni"
+
+Maher@DESKTOP-N09PJ70 MINGW64 ~/Desktop/learn-git-again (master)
+$ git config --global user.email "Mouti3cha3beni@gmail.com"
+
+Maher@DESKTOP-N09PJ70 MINGW64 ~/Desktop/learn-git-again (master)
+$ touch third.txt
+
+Maher@DESKTOP-N09PJ70 MINGW64 ~/Desktop/learn-git-again (master)
+$ git add third.txt
+
+Maher@DESKTOP-N09PJ70 MINGW64 ~/Desktop/learn-git-again (master)
+$ git commit -m "adding third.txt"
+[master (root-commit) a36e4f8] adding third.txt
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 moutie
+ create mode 100644 third.txt
+
+Maher@DESKTOP-N09PJ70 MINGW64 ~/Desktop/learn-git-again (master)
+$ git log
+commit a36e4f85f73f8753ad054095ac4458ce41492f68 (HEAD -> master)
+Author: Mouti3cha3beni <Mouti3cha3beni@gmail.com>
+Date:   Thu Feb 25 12:41:03 2021 +0100
+
+    adding third.txt
+
+Maher@DESKTOP-N09PJ70 MINGW64 ~/Desktop/learn-git-again (master)
+$ touch forth.txt
+
+Maher@DESKTOP-N09PJ70 MINGW64 ~/Desktop/learn-git-again (master)
+$ git commit -m "adding forth.txt"
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    moutie
